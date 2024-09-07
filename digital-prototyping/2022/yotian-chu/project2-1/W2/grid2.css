@@ -1,0 +1,112 @@
+#grid2 {
+	
+}
+.grid2-item{
+	height: auto;
+	float: left;
+	margin-bottom: 2.5vw;
+    /*border: 2px solid white;*/
+    /*-webkit-transition: left 0.5s ease, top 0.5s ease;*/
+       /*-moz-transition: left 0.5s ease, top 0.5s ease;*/
+        /*-ms-transition: left 0.5s ease, top 0.5s ease;*/
+         /*-o-transition: left 0.5s ease, top 0.5s ease;*/
+            /*transition: left 0.5s ease, top 0.5s ease;*/
+
+}
+.grid2-item.is-expanded{
+	/*transition: width 0.4s, height 0.4s;*/
+	width: 100%;
+	/*left: 0;*/
+}
+.grid2-gutter-sizer{
+	width: 1.7vw;
+}
+.grid2-item, .grid2-sizer {
+	width: 19%;
+	/*min-height: 200px;*/
+}
+.grid2-item:hover{
+
+}
+.grid2-item img {
+    /*max-width: 225px;*/
+    max-height: 100% !important;
+}
+.grid2-item-large {
+	width: 38%;
+	/*min-height: 200px;*/
+}
+.grid2-item-large img{
+	/*max-width: 509px;*/
+}
+.grid2-item .txt{
+
+}
+.grid2-item-paragraph{
+	width: 100%;
+	height: auto;
+	word-wrap: break-word;
+	padding-left: 20px;
+}
+.grid2-item-paragraph p{
+	padding-bottom: 18px;
+}
+.grid2-item-paragraph a{
+	color: #00ffff;
+	border-color: #00ffff;
+	border-bottom: dotted 1px;
+}
+.grid2-item-image{
+	/*width: 25%;*/
+	/*display: none;*/
+	height: 100%;
+	/*margin-bottom: 50px;*/
+    width: auto;
+    pointer-events:none;
+	/*background: #0D8;*/
+}
+.grid2-item-image .front{
+	visibility: hidden;
+}
+
+.grid2-item-image img{
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+.grid2-item-image:hover > .overlay{
+	display: flex;
+}
+.grid2-item-large .overlay-text-title{
+    font-size: 3vw;
+}
+#grid2-buttons{
+	position: fixed;
+    bottom: 50px;
+    right: 50px;
+    width: 50px;
+    height: 50px;
+}
+@media screen and (max-width: 600px){
+	.grid2-item, .grid2-sizer {
+		width: 85%;
+	}
+	.grid2-item-large {
+		width: 85%;
+	}
+	.grid2-item{
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+	}
+	.grid2-item img {
+		height: auto !important;
+	}
+	.grid2-item-large .overlay-text-title{
+	    font-size: 5vw;
+	}
+}
